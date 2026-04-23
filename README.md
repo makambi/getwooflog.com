@@ -6,13 +6,15 @@ Source for the [getwooflog.com](https://getwooflog.com) marketing and legal site
 
 ```
 .
-├── index.html          # Landing page
-├── privacy/index.html  # Privacy Policy (GDPR)
-├── support/index.html  # Support page
-├── style.css           # Shared stylesheet
-├── RUNBOOK.md          # One-time setup: Cloudflare Pages + DNS + Email
-├── verify.sh           # Post-deploy verification script
-└── README.md           # This file
+├── index.html              # Landing page
+├── privacy/index.html      # Privacy Policy (GDPR)
+├── support/index.html      # Support page
+├── style.css               # Shared stylesheet
+├── assets/                 # App icon (light + dark variants)
+├── design-prompts/         # Prompts for AI-generated design variants
+├── RUNBOOK.md              # One-time setup: Cloudflare Pages + DNS + Email
+├── verify.sh               # Post-deploy verification script
+└── README.md               # This file
 ```
 
 No build step. Plain HTML + one CSS file.
