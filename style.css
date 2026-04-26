@@ -68,6 +68,7 @@ header.site a.brand {
   height: 28px;
   border-radius: 7px;
   display: block;
+  background: #222222;
 }
 
 header.site nav {
@@ -189,7 +190,7 @@ footer.site a:hover { color: var(--brand); }
   border-radius: 28px;
   display: block;
   margin: 0 auto 28px;
-  box-shadow: 0 8px 32px rgba(61, 138, 90, 0.18), 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: #222222;
 }
 
 .hero h1 {
