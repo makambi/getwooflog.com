@@ -264,7 +264,7 @@ footer.site a:hover { color: var(--brand); }
   background: var(--bg);
 }
 
-.feature h3 {
+.feature h2 {
   margin: 0 0 8px;
   font-size: 17px;
   color: var(--brand);
