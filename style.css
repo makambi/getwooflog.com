@@ -5,7 +5,6 @@
   --text-muted: #5A665E;
   --bg: #FFFFFF;
   --border: #E3E8E5;
-  --accent-bg: #F2F8F4;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +15,6 @@
     --text-muted: #9BA8A0;
     --bg: #121512;
     --border: #2A312C;
-    --accent-bg: #182019;
   }
 }
 
@@ -249,24 +247,36 @@ footer.site a:hover { color: var(--brand); }
   color: var(--text-muted);
 }
 
-.launch-info {
-  margin: 48px 0 16px;
-  padding: 28px 28px 20px;
-  background: var(--accent-bg);
-  border-radius: 14px;
-  text-align: center;
+/* App Store badge — official Apple asset, single-style (do not tint/recolor).
+   Keep clear space around it and respect Apple's minimum height. */
+.store-badge {
+  display: inline-block;
+  line-height: 0;
 }
 
-.launch-info h2 {
-  margin: 0 0 12px;
-  color: var(--brand);
-  font-size: 22px;
+.store-badge img {
+  display: block;
+  width: auto;
+  max-width: 100%;
 }
 
-.launch-info p {
-  margin: 0 auto;
-  max-width: 520px;
-  color: var(--text);
+.store-badge--hero {
+  margin-top: 28px;
+}
+
+.store-badge--hero img {
+  height: 56px; /* above Apple's 40px minimum */
+}
+
+/* Footer badge sits on its own centered row above the copyright/nav line. */
+.store-badge--footer {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.store-badge--footer img {
+  height: 40px; /* Apple minimum height */
 }
 
 .about {
@@ -288,6 +298,7 @@ footer.site a:hover { color: var(--brand); }
   .hero-icon { width: 104px; height: 104px; border-radius: 23px; }
   .features { grid-template-columns: 1fr; }
   footer.site { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .store-badge--footer { flex-basis: auto; justify-content: flex-start; }
 }
 
 strong { font-weight: 600; }
