@@ -37,14 +37,20 @@
       </picture>
       WoofLog
     </a>
-    <nav class="lang-picker" aria-label="Idioma">
-      <a href="/" data-lang="en">EN</a>
-      <span aria-current="page">ES</span>
-      <a href="/de/" data-lang="de">DE</a>
-      <a href="/fr/" data-lang="fr">FR</a>
-      <a href="/it/" data-lang="it">IT</a>
-      <a href="/pt/" data-lang="pt">PT</a>
-    </nav>
+    <details class="lang-picker">
+      <summary aria-label="Idioma">
+        <span class="lang-current">ES</span>
+        <svg class="lang-caret" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <ul class="lang-menu">
+        <li><a href="/" data-lang="en">English</a></li>
+        <li><span aria-current="page">Español</span></li>
+        <li><a href="/de/" data-lang="de">Deutsch</a></li>
+        <li><a href="/fr/" data-lang="fr">Français</a></li>
+        <li><a href="/it/" data-lang="it">Italiano</a></li>
+        <li><a href="/pt/" data-lang="pt">Português</a></li>
+      </ul>
+    </details>
     <nav>
       <a href="/privacy/">Privacidad</a>
       <a href="/support/">Soporte</a>

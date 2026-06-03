@@ -34,15 +34,24 @@
       }
     }
 
-    // Remember manual picker choices once the DOM is ready.
+    // Remember manual picker choices once the DOM is ready, and give the
+    // native <details> dropdown the usual outside-click / Escape close.
     document.addEventListener('DOMContentLoaded', function () {
       var picker = document.querySelector('.lang-picker');
       if (!picker) return;
+
       picker.addEventListener('click', function (e) {
         var a = e.target.closest('a[data-lang]');
         if (a) {
           try { localStorage.setItem(KEY, a.getAttribute('data-lang')); } catch (e3) {}
         }
+      });
+
+      document.addEventListener('click', function (e) {
+        if (picker.open && !picker.contains(e.target)) picker.open = false;
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && picker.open) picker.open = false;
       });
     });
   } catch (e) {}
