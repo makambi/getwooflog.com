@@ -84,32 +84,77 @@ header.site nav a {
 
 header.site nav a:hover { color: var(--brand); }
 
-/* Language picker (header). The picker group is pushed right via the generic
-   nav margin-left:auto; the trailing Privacy/Support nav sits next to it. */
+/* Language picker (header) — a compact dropdown so the language list never
+   overflows the header on narrow screens. Built on the native <details>
+   disclosure element; lang.js adds outside-click / Escape close as a
+   progressive enhancement. The picker is pushed right with margin-left:auto;
+   the trailing Privacy/Support nav sits next to it. */
 header.site .lang-picker {
-  gap: 10px;
+  position: relative;
+  margin-left: auto;
 }
 
 header.site .lang-picker ~ nav {
   margin-left: 0;
 }
 
-header.site .lang-picker a,
-header.site .lang-picker span {
+header.site .lang-picker summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  list-style: none;
+  padding: 5px 10px;
   font-size: 13px;
+  font-weight: 600;
   letter-spacing: 0.03em;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
 
-header.site .lang-picker a {
+header.site .lang-picker summary::-webkit-details-marker { display: none; }
+header.site .lang-picker summary::marker { content: ""; }
+
+header.site .lang-picker summary:hover {
+  color: var(--brand);
+  border-color: var(--brand);
+}
+
+header.site .lang-caret { transition: transform 0.15s ease; }
+header.site .lang-picker[open] .lang-caret { transform: rotate(180deg); }
+
+header.site .lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 30;
+  min-width: 160px;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+header.site .lang-menu a,
+header.site .lang-menu span {
+  display: block;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
   color: var(--text-muted);
   text-decoration: none;
 }
 
-header.site .lang-picker a:hover {
-  color: var(--brand);
+header.site .lang-menu a:hover {
+  color: var(--text);
+  background: var(--border);
 }
 
-header.site .lang-picker span[aria-current="page"] {
+header.site .lang-menu span[aria-current="page"] {
   color: var(--text);
   font-weight: 600;
 }
@@ -330,7 +375,6 @@ footer.site a:hover { color: var(--brand); }
   .features { grid-template-columns: 1fr; }
   footer.site { flex-direction: column; align-items: flex-start; gap: 12px; }
   .store-badge--footer { flex-basis: auto; justify-content: flex-start; }
-  header.site .lang-picker { gap: 8px; }
 }
 
 strong { font-weight: 600; }
