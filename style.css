@@ -249,24 +249,30 @@ footer.site a:hover { color: var(--brand); }
   color: var(--text-muted);
 }
 
-.launch-info {
-  margin: 48px 0 16px;
-  padding: 28px 28px 20px;
-  background: var(--accent-bg);
-  border-radius: 14px;
-  text-align: center;
+/* App Store badge — official Apple asset, single-style (do not tint/recolor).
+   Keep clear space around it and respect Apple's minimum height. */
+.store-badge {
+  display: inline-block;
+  line-height: 0;
 }
 
-.launch-info h2 {
-  margin: 0 0 12px;
-  color: var(--brand);
-  font-size: 22px;
+.store-badge img {
+  display: block;
+  width: auto;
+  height: 48px; /* above Apple's 40px minimum */
+  max-width: 100%;
 }
 
-.launch-info p {
-  margin: 0 auto;
-  max-width: 520px;
-  color: var(--text);
+.store-badge--hero {
+  margin-top: 28px;
+}
+
+.store-badge--hero img {
+  height: 56px;
+}
+
+.store-badge--footer img {
+  height: 40px; /* Apple minimum height */
 }
 
 .about {
