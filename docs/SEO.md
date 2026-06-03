@@ -70,14 +70,16 @@ the SEO PR** (they touch marketing copy + 5 translations).
 | Area | App Store (shipped) | Website now | Action |
 |---|---|---|---|
 | Positioning | "Dog Health Diary", "Symptom & Med Tracker" | "A focused health record app" | Re-point title/H1/meta to the diary/tracker phrasing |
-| **Weight** | Ships a Weight tracker | **Not mentioned anywhere** | Add a Weight feature card (+ translations) |
-| **History** | "organized by date" | "filter to last 7, 30, or 90 days — or any custom range" | **Likely overstated — verify against the app and correct** |
+| **Weight** | Ships a Weight tracker | ~~not mentioned~~ | ✅ Added a Weight feature card (all 6 locales) |
+| **History** | "organized by date" | ~~"filter to last 7/30/90 days…"~~ | ✅ Reworded to "organized by date" (claim removed) |
 | Medication | "log each dose, last 7 days at a glance" | "create prescriptions… course… what's still outstanding" | Confirm wording matches the shipped meds view |
 | Terminology | poop, pee, diarrhea, itch, limp, weight | stool, urinary (no poop/pee/weight) | Weave lay search terms into body + FAQ |
 | Banned words | diagnose, treat, cure, consult, "structured forms", "vet visits/vaccinations", "Timeline" | none present ✓ | keep avoiding |
 
-**Recommended next content PR:** add a Weight card, correct the History claim, and add an FAQ
-section (great for both long-tail SEO and AI answers), then re-translate the changed strings.
+**Done (this PR):** Weight feature card + History-claim correction, re-translated across all 6 locales.
+**Still recommended:** confirm the medication wording vs. the shipped app, weave lay search terms
+(poop/pee/diarrhea) into body copy, and add an FAQ section (great for long-tail SEO + AI answers) —
+then re-translate the changed strings.
 
 ---
 
