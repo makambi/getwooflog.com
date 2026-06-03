@@ -44,6 +44,7 @@ body {
 header.site {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
   padding-bottom: 24px;
   margin-bottom: 32px;
@@ -82,6 +83,36 @@ header.site nav a {
 }
 
 header.site nav a:hover { color: var(--brand); }
+
+/* Language picker (header). The picker group is pushed right via the generic
+   nav margin-left:auto; the trailing Privacy/Support nav sits next to it. */
+header.site .lang-picker {
+  gap: 10px;
+}
+
+header.site .lang-picker ~ nav {
+  margin-left: 0;
+}
+
+header.site .lang-picker a,
+header.site .lang-picker span {
+  font-size: 13px;
+  letter-spacing: 0.03em;
+}
+
+header.site .lang-picker a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+header.site .lang-picker a:hover {
+  color: var(--brand);
+}
+
+header.site .lang-picker span[aria-current="true"] {
+  color: var(--text);
+  font-weight: 600;
+}
 
 h1 {
   font-size: 32px;
@@ -299,6 +330,7 @@ footer.site a:hover { color: var(--brand); }
   .features { grid-template-columns: 1fr; }
   footer.site { flex-direction: column; align-items: flex-start; gap: 12px; }
   .store-badge--footer { flex-basis: auto; justify-content: flex-start; }
+  header.site .lang-picker { gap: 8px; }
 }
 
 strong { font-weight: 600; }
