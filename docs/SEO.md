@@ -113,5 +113,11 @@ Ongoing GEO practices:
 - Watch Search Console queries to confirm the symptom long-tail is landing; iterate copy.
 - Backlog: (1) the §3 content alignment PR (Weight, History fix, lay terms, FAQ); (2) a real
   1200×630 social/OG share image (currently the square icon → `twitter:card=summary`);
-  (3) optional lightweight content (e.g. a short "how to track your dog's symptoms for the vet"
-  article) to capture vet-prep long-tail.
+  (3) symptom-intercept content — in progress. A `/blog/` guides hub now exists with the first
+  article, "Why Is My Dog So Itchy?" (`/blog/why-is-my-dog-so-itchy/`), targeting high-volume
+  symptom queries. Each article answers the query directly (causes · red flags · what to note
+  for the vet), carries `Article` + `BreadcrumbList` + `FAQPage` JSON-LD, and ends with a UTM-
+  tagged install CTA (`utm_source=blog&utm_campaign=symptom`). It gives **no treatment or
+  symptom-relief advice** — by policy, treatment is left to the owner's vet. Next: vomiting,
+  diarrhea, limping, ear issues on the same pattern; then the community-reply variant and
+  locale translations.
