@@ -1,6 +1,6 @@
 # WoofLog
 
-> WoofLog is a free iPhone app — a private health diary for dogs. Dog owners log symptoms, medications, and weight in seconds and build a clear, date-ordered history to show the vet. All data stays on the device: no account, no sign-up.
+> WoofLog is a free iPhone app — a private health diary for dogs. Dog owners log symptoms, medications, vaccines, and weight in seconds, build a clear date-ordered history to show the vet, and can share the dog's record with family or a sitter. The record is stored privately in the owner's own iCloud. No separate account or sign-up — just the Apple ID.
 
 ## What it is
 - Platform: iOS (iPhone). Price: free, no in-app purchases.
@@ -10,16 +10,20 @@
 
 ## What you can log
 - Symptoms — skin & coat, ears, eyes, stool (poop), vomiting, urinary (pee), and mobility — each with a severity and an optional photo, in a couple of taps.
-- Medications — log each dose as you give it and see the last 7 days at a glance.
-- Weight — record your dog's weight and see how it changes over time.
+- Medications — log each dose as you give it and see recent doses and what's due today at a glance.
+- Vaccines & routine care — keep them alongside medications, all in one place.
+- Weight — record your dog's weight and body condition and see how they change over time.
 - Free-form notes for anything else.
 
 ## History
 - Every entry appears in one History, organized by date, so you can look back at how things have changed and walk into the vet with the full picture.
 
+## Sharing
+- Invite a partner, a family member, or a sitter to a dog's record — everyone sees the same up-to-date history, and every entry shows who logged it. Requires both people to be signed into iCloud.
+
 ## Privacy
-- Local-first: your dog's health data (symptoms, photos, weight, notes) stays on your iPhone.
-- No account or sign-up. Optional anonymous product analytics are off by default and can be turned on in Settings.
+- Your dog's record (symptoms, photos, weight, notes) is stored privately in your own iCloud, synced across your devices, and shared only with people you invite. WoofLog operates no servers and cannot access it.
+- No separate account or sign-up — just your Apple ID. Optional anonymous product analytics are off by default and can be turned on in Settings.
 
 ## Links
 - Home: https://getwooflog.com/
