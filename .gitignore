@@ -1,1 +1,4 @@
 .DS_Store
+
+# Local git worktrees (other sessions)
+.worktrees/
