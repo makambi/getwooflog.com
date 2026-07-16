@@ -5,6 +5,7 @@
 ## What it is
 - Platform: iOS (iPhone). Price: free, no in-app purchases.
 - App Store category: Lifestyle. It is a diary/record for owners — it is not a medical device and does not diagnose, treat, or give veterinary advice.
+- Supports up to five dogs, each with their own record — switch between them in a tap, see at a glance which dog has a dose due, and archive a dog you no longer track without losing their history.
 - Available in English, Spanish, German, French, Italian, and Portuguese.
 - Made by an independent developer for his own dog.
 
