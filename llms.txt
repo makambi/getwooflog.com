@@ -25,6 +25,11 @@
 - Your dog's record (symptoms, photos, weight, notes) is stored privately in your own iCloud, synced across your devices, and shared only with people you invite. WoofLog operates no servers and cannot access it.
 - No separate account or sign-up — just your Apple ID. Optional anonymous product analytics are off by default and can be turned on in Settings.
 
+## Guides
+- Plain-English articles about common dog symptoms (likely causes, when to call the vet, what to note before the appointment). General information only — not veterinary advice, and they do not give treatment or symptom-relief instructions; treatment decisions are left to the owner's vet.
+- Dog health guides (index): https://getwooflog.com/blog/
+- Why Is My Dog So Itchy?: https://getwooflog.com/blog/why-is-my-dog-so-itchy/
+
 ## Links
 - Home: https://getwooflog.com/
 - Download on the App Store: https://apps.apple.com/app/id6760972616
